@@ -66,5 +66,12 @@ and change line 55 to
 to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/Makefile_example.h)).
 - Update the `parse_key_bindings.py` with the requested information
 
+# Usage
+To generate the documentation, type `prosv5 make builddocs` at the root directory of your project. If you want the script to be run everytime you compile the project, you can create aliases in your `.bashrc` (or equivalently `.zshrc`, etc) of the form
+
+    alias pm='prosv5 make builddocs'
+    alias pmu='prosv5 make builddocs && prosv5 upload'
+    alias pmut='prosv5 make builddocs && prosv5 upload && prosv5 terminal'
+
 # Example of project that uses this script
 See [this github repository](https://github.com/smcrobotics/competition_bot_24_inch) for an example of all the above used in a PROS project.
