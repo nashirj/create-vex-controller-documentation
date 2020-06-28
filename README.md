@@ -64,7 +64,7 @@ and change line 55 to
         builddocs: path/to/constants.h
             python generic_parse_key_bindings.py
 to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/Makefile_example.h)).
-- Update the `parse_key_bindings.py` with the requested information
+- Update `parse_key_bindings.py` with the requested information
 
 # Usage
 To generate the documentation, type `prosv5 make builddocs` at the root directory of your project. If you want the script to be run everytime you compile the project, you can create aliases in your `.bashrc` (or equivalently `.zshrc`, etc) of the form
