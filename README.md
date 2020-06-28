@@ -6,7 +6,7 @@ to generate a markdown file of button assignments.
 
 The following is an example of documentation generated directly from source code.
 
---
+---
 
 # Key bindings for SMC 2019-2020 24in robot
 ![Controller](https://raw.githubusercontent.com/smcrobotics/competition_bot_15_inch/master/docs/controller.png)
@@ -28,7 +28,7 @@ The following is an example of documentation generated directly from source code
 13. A: place stack
 14. B: drive brake toggle
 
---
+---
 
 # Motivation
 
@@ -58,12 +58,12 @@ and change line 55 to
 
 # Setting up your project to use the parse\_key\_bindings script
 - Create a directory called `docs` in your top level directory, and put the file `controller.png` in this directory.
-- Create a file called `constants.h` and assign your button mappings inside of it (see [`constants_example.h`]().
+- Create a file called `constants.h` and assign your button mappings inside of it (see [`constants_example.h`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/constants_example.h)).
 - Add the lines
 
         builddocs: path/to/constants.h
             python generic_parse_key_bindings.py
-to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`]()).
+to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/Makefile_example.h)).
 - Update the `parse_key_bindings.py` with the requested information
 
 # Example of project that uses this script
