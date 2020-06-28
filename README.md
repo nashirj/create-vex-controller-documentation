@@ -63,7 +63,7 @@ and change line 55 to
 
         builddocs: path/to/constants.h
             python generic_parse_key_bindings.py
-to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/Makefile_example.h)).
+to your `Makefile` which is in the top level directory of your project folder (see [`Makefile_example`](https://github.com/nashirj/create-vex-controller-documentation/blob/master/Makefile_example)).
 - Update `parse_key_bindings.py` with the requested information
 
 # Usage
@@ -75,3 +75,7 @@ To generate the documentation, type `prosv5 make builddocs` at the root director
 
 # Example of project that uses this script
 See [this github repository](https://github.com/smcrobotics/competition_bot_24_inch) for an example of all the above used in a PROS project.
+
+# Notes
+This script was tested on Ubuntu 18.04 and macOS Catalina 10.15.5.
+
