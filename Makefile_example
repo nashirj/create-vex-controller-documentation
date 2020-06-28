@@ -3,7 +3,7 @@
 
 # Include builddocs target
 builddocs: include/smc/util/constants.h
-	python parse_key_bindings_15in.py
+	python3 generic_parse_key_bindings.py
 
 # filename extensions
 CEXTS:=c
